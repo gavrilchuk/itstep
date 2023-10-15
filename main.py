@@ -1,16 +1,21 @@
-# This is a sample Python script.
+class trikutnik:
+    type="трикутник"
+    count=3
+    name="ABC"
+    def __init__(self,name,a,b,c):
+        self.name=name
+        self.a=a
+        self.b=b
+        self.c=c
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    def print_tr(self):
+        print(f"Моє ім'я - {self.name}")
+    def remane(self,new_name):
+        self.name=new_name
+        self.print_tr()
 
+tr1=trikutnik('ABC',2,3,4)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+tr1.print_tr()
